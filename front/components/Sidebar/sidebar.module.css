@@ -1,0 +1,37 @@
+.sidebar-container {
+  background-color: var(--primary-color);
+  color: black;
+  @apply w-64 h-screen flex flex-col px-4 py-6;
+}
+
+.sidebar-container .menu-item {
+  color: black;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  transition: background-color 0.3s;
+}
+.sidebar-container .menu-item:hover {
+  background-color: var(--tertiary-color);
+}
+
+.sidebar-container .menu-item-active {
+  background-color: var(--tertiary-color);
+  color: black;
+}
+
+.sidebar-container .sub-menu {
+  padding-left: 1rem;
+}
+
+.sidebar-container .sub-menu-item {
+  color: black;
+  transition: background-color 0.1s;
+}
+.sidebar-container .sub-menu-item:hover {
+  background-color: var(--quaternary-color);
+}
+
+.sidebar-container .sub-menu-item-active {
+  background-color: var(--quaternary-color);
+  color: black;
+}
